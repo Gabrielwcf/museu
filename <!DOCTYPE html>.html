@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museu da Arte Renacentista</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css&quot; rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+ 
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap&quot; rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Libre Baskerville', serif;
+            background-color: #f8f9fa;
+        }
+
+        h1 {
+            color: #343a40;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            font-size: 1.1em;
+            color: #495057;
+        }
+
+        .img-fluid {
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-primary {
+            background-color: #6f42c1;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #5a3796;
+        }
+
+        .btn {
+            margin-top: 10px;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            background-color: #ffffff;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .container {
+            padding-top: 30px;
+        }
+
+        footer {
+            margin-top: 30px;
+            padding: 10px 0;
+            background-color: #343a40;
+            color: #ffffff;
+            text-align: center;
+        }
+    </style>
+
+    <script type="text/javascript">
+       
+        function perguntarUltimaCeia() {
+            var pergunta = "O quadro 'A Última Ceia' foi pintado entre os anos 1480 ou 1490?";
+            var respostaCorreta = "1490";
+            var resposta = prompt(pergunta);
+
+            if (resposta !== null && resposta.trim() !== "") {
+                if (resposta.trim() === respostaCorreta) {
+                    alert("Você acertou a resposta!");
+                } else {
+                    alert("Você errou a resposta.");
+                }
+            } else {
+                alert("Você não inseriu uma resposta.");
+            }
+        }
+
+     
+        function perguntarPartidaXadrez() {
+            var pergunta = "Quem pintou 'A Partida de Xadrez'?";
+            var respostaCorreta = "Sofonisba Anguissola";
+            var resposta = prompt(pergunta);
+
+            if (resposta !== null && resposta.trim() !== "") {
+                if (resposta.trim().toLowerCase() === respostaCorreta.toLowerCase()) {
+                    alert("Você acertou a resposta!");
+                } else {
+                    alert("Você errou a resposta.");
+                }
+            } else {
+                alert("Você não inseriu uma resposta.");
+            }
+        }
+
+       
+        function perguntarDavi() {
+            var pergunta = "Qual a altura da escultura 'Davi' de Michelangelo?";
+            var respostaCorreta = "1,57 metro";
+            var resposta = prompt(pergunta);
+
+            if (resposta !== null && resposta.trim() !== "") {
+                if (resposta.trim() === respostaCorreta) {
+                    alert("Você acertou a resposta!");
+                } else {
+                    alert("Você errou a resposta.");
+                }
+            } else {
+                alert("Você não inseriu uma resposta.");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="text-center mb-5">
+            <h1 class="display-4">Museu da Arte Renacentista</h1>
+            <p class="lead">Explore algumas das maiores obras-primas do Renascimento e teste seus conhecimentos!</p>
+        </div>
+
+       
+        <section class="row mb-4">
+            <div class="col-md-6 mx-auto">
+                <div class="card">
+                    <img src="1.jpg" class="img-fluid card-img-top" alt="A Última Ceia de Leonardo da Vinci">
+                    <div class="card-body">
+                        <h1>A Última Ceia - Leonardo da Vinci</h1>
+                        <p>A Última Ceia de Leonardo da Vinci: Pintada entre 1495 e 1498, essa obra monumental, localizada na Igreja Santa Maria delle Grazie em Milão, retrata o momento em que Jesus anuncia a traição de um de seus apóstolos.</p>
+                        <button class="btn btn-primary" onclick="perguntarUltimaCeia()">Perguntar sobre A Última Ceia</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+     
+        <section class="row mb-4">
+            <div class="col-md-6 mx-auto">
+                <div class="card">
+                    <img src="2.jpg" class="img-fluid card-img-top" alt="A Partida de Xadrez">
+                    <div class="card-body">
+                        <h1>A Partida de Xadrez - Sofonisba Anguissola</h1>
+                        <p>Sofonisba Anguissola, pioneira entre as mulheres artistas do Renascimento, utiliza técnicas como o sfumato em sua obra "A Partida de Xadrez", que retrata uma partida entre suas irmãs.</p>
+                        <button class="btn btn-primary" onclick="perguntarPartidaXadrez()">Perguntar sobre A Partida de Xadrez</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+     
+        <section class="row mb-4">
+            <div class="col-md-6 mx-auto">
+                <div class="card">
+                    <img src="3.jpg" class="img-fluid card-img-top" alt="O David de Michelangelo">
+                    <div class="card-body">
+                        <h1>O David - Michelangelo</h1>
+                        <p>A escultura mais famosa de Michelangelo, "Davi", foi esculpida entre 1501 e 1504 e representa o herói no momento anterior à batalha contra Golias.</p>
+                        <button class="btn btn-primary" onclick="perguntarDavi()">Perguntar sobre O David</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Museu da Arte Renacentista. Adão Ribas Oliveira/Gabriel Walyson.</p>
+        </footer>
+    </div>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js&quot; integrity="sha384-oBqDVmMz4fnFO9gybLkK3JbHbEqlM8OF/gsG2ke1rj17gxVVVq5w7G5Vkk+6R6p3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js&quot; integrity="sha384-BFH57vmdDszb7m/LnpE/dQaSTFymtELFrYaC9AMz79r4Ntv7d5wVf0fFzB5K5iN2" crossorigin="anonymous"></script>
+
+    <button class="btn btn-secondary" onclick="window.location.href='https://www.google.com';">Sair</button>
+
+
+    
+
+</body>
+
+</html>
